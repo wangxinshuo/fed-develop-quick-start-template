@@ -21,11 +21,12 @@ module.exports = {
 				use: {
 						loader: 'babel-loader',
 						options: {
-						presets: [['env',{
-							"targets": {
-								"browsers": ["ie >= 8"]
-								},
-						}], 'react'] 
+							presets: [['env',{
+								"targets": {
+									"browsers": ["ie >= 8"]
+									},
+							}], 'react'],
+							"plugins": [["import", { "libraryName": "antd", "style": "css" }]]
 						}
 				}		
 		  	},
