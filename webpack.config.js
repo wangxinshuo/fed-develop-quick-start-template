@@ -26,7 +26,10 @@ module.exports = {
 									"browsers": ["ie >= 8"]
 									},
 							}], 'react'],
-							"plugins": [["import", { "libraryName": "antd", "style": "css" }]]
+							"plugins": [
+								["import", { "libraryName": "antd", "style": "css" }],
+								["transform-runtime", {"regenerator": true,"polyfill": true,"helpers": true}]
+							]
 						}
 				}		
 		  	},
